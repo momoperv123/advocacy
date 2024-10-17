@@ -1,0 +1,438 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+#logo {
+  width: 50px;
+  height: auto;
+}
+
+nav {
+  border-bottom: 2px solid black !important;
+}
+
+.nav-link {
+  color: gray !Important;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar-brand {
+  color: #0598ce !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #5D3FD3 !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav-link {
+  transition: all 0.25s ease-in-out;
+  color: #0598ce !Important;
+}
+
+.nav-link:hover {
+  transition: all 0.25s ease-in-out;
+  color: #5D3FD3 !Important;
+}
+
+.navbar-toggler {
+  border: 2px solid gray !Important;
+  box-shadow: 2.5px 2.5px 5px gray;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  border: 2px solid black !Important;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 2.5px 2.5px 5px black;
+}
+
+.header {
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.header-home {
+  background-image: url("src/friends.jpg");
+}
+
+.header-quiz {
+  background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/rZJIMvhmliwmde8a6/videoblocks-party-on-the-beach-young-people-having-fun-at-the-evening-promenade-guys-and-girls-dancing-on-the-background-of-night-sea_b_56xexpb_thumbnail-1080_01.png");
+}
+
+.header-petition {
+  background-image: url("src/people-water-fun.jpg");
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caption {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#home .container {
+  padding-top: 15px;
+  color: white;
+  border-radius: 50px;
+  position: relative; 
+  z-index: 1;
+}
+
+.title {
+  color: #0598ce;
+}
+
+.ftext {
+  font-size: 20px !important;
+  width: 100%;
+  margin: 0;
+}
+
+.ftext p {
+  font-size: 20px !important;
+}
+
+.ftext h5 {
+  font-size: 25px !important;
+}
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% - 13px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  color: white;
+  transition: 0.25s ease-in-out;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.down-arrow {
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:hover {
+  color: black; 
+  transition: 0.25s ease-in-out;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 45%; 
+  height: 375px;
+  margin-bottom: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+footer {
+  background-color: white;
+  border-top: 2px solid black;
+}
+
+footer p {
+  color: black;
+}
+
+.instagram-icon, .linkedin-icon, .tiktok-icon {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #0598ce;
+  transition: 0.25s ease-in-out;
+}
+
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.tiktok-icon:hover {
+  transition: 0.25s ease-in-out;
+  color: #5D3FD3;
+}
+
+#sitemap li a {
+  color: #0598ce;
+  text-decoration: none; 
+  transition: 0.25s ease-in-out;
+}
+
+#sitemap li a:hover {
+  color: #5D3FD3; 
+  transition: 0.25s ease-in-out;
+}
+
+/* Quiz */
+.multipleChoice {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: black;
+  font-size: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.multipleChoice h3 {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.multipleChoice h3::first-letter {
+  font-size: 55px;
+  text-shadow: 5px 5px 0px white;
+}
+
+.multipleChoice h5 {
+  margin-top: -80px;
+  font-size: 18px;
+  color: grey;
+}
+
+.choice {
+  margin-top: 3px;
+  margin-bottom: 2px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 3px;
+  font-size: 20px;
+  background-color: #0598ce;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.choice:hover {    
+  background-color: #5D3FD3;
+  transition: all 0.25s ease-in-out;
+}
+
+.choiceSystem {
+  padding-bottom: 25px;
+}
+
+.question {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.dark-mode-icon {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #333; 
+  color: #fff; 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999; 
+}
+
+.dark-mode-icon i {
+  font-size: 20px;
+}
+
+.dark-mode {
+  background-color: #111; 
+  color: #fff;
+}
+
+.dark-mode {
+  color: #fff;
+}
+
+.dark-mode h4.question,
+.dark-mode h5:not([class]) {
+  color: #fff;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+#sign-petition input {
+  text-align: center;
+  display: inline-block;
+  width: 150px; 
+  margin-right: 5px;
+}
+
+#sign-now-button {
+  margin-top: 25px;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+#sign-now-button, #close-modal-button {
+  color: #0598ce !important;
+  background-color: white !important;
+  width: 20% !important;
+  height: auto !important;
+  border-radius: 3px !important;
+  border: 1px solid #0598ce !important;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 2.5px 2.5px 5px #0598ce;
+}
+
+#sign-now-button:hover, #close-modal-button:hover {
+  color: #5D3FD3 !important;
+  border: 1px solid #5D3FD3 !important;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 2px 2px 4px #5D3FD3;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20% auto;
+  max-width: 600px;
+  top: -22.5% !important;
+  border: 2px solid black !important;
+}
+
+.modal.show {
+  display: block;
+}
+
+@keyframes flashAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.modal-content img {
+  width: 75%; 
+  height: auto; 
+  border: 2px solid black;
+  animation: flashAnimation 1s infinite;
+}
+
+.animated-content {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.animated-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .animated-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+  }
+}
+
+

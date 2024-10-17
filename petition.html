@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5600/5600504.png">
+  <title>MindfulWellnessHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;">
+    <a href="index.html" class="navbar-brand"><img id="logo" alt="Logo" src="https://cdn-icons-png.flaticon.com/512/5600/5600504.png"> MindfulWellnessHub</a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active mr-auto">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active mr-auto">
+          <a class="nav-link" href="quiz.html">Assessment</a>
+        </li>
+        <li class="nav-item active mr-auto">
+          <a class="nav-link" href="#home">Petition</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="d-flex align-items-center home header-petition header">
+    <div class="container text-center">
+      <h1>Petition</h1>
+      <p class="caption">Empowering Minds, Nurturing Wellness: Your Journey to Inner Strength
+        </a></p>
+    </div>
+    <div><a href="#content" class="down-arrow"></a></div>
+    </div>
+  </header>
+
+  <div id="content" class="text-center py-3">
+    <div class="petition" id="petition">
+
+      <br><h5 class="title text-uppercase">Sign Our Petition 📢</h5><br>
+      <div class="petition-container">
+        <div class="petition-para">
+          <p>Mental health is an essential aspect of our overall well-being, yet it is often stigmatized and overlooked. This platform aims to break down those barriers by providing valuable resources, support, and information to those who need it most. By signing this petition, I am standing in solidarity with the countless individuals who are battling mental health challenges and advocating for a more compassionate and understanding society. Let's work together to promote mental health awareness, reduce stigma, and create a more inclusive and supportive community for everyone.</p>
+
+          <form id="sign-petition" title="sign-petition">
+            <input placeholder="Name" style="text-align: center;" type="text" id="name" name="name" required>
+            <input placeholder="Hometown" style="text-align: center;" type="text" id="hometown" name="hometown" required>
+            <input placeholder="Email" type="email" id="email" name="email" required style="text-align: center;">
+          </form>
+          <div id="thanks-modal" class="modal">
+            <div class="modal-content">
+              <div id="modal-text-container">
+                <p id="thank-you-message">🎉🎊 Thank You <span id="user-info"></span>!!! 🎊🎉</p>
+              </div>
+              <img src="https://media4.giphy.com/media/c1vzm6D1NPzm8/200w.gif?cid=6c09b952poq3paxyr2e7ies1dbme5pmlismxdhz1tizkm6dx&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="Happy Pikachu">
+              <br>
+              <button id="close-modal-button">Close</button>
+            </div>
+          </div>
+
+
+          <button id="sign-now-button">Sign Now</button>
+        </div>
+
+        <div class="signatures">
+          <p>😊 Franco from Brooklyn supports this.</p>
+          <p>😊 Arnold from Queens supports this.</p>
+          <p>😊 Mike from Harlem supports this.</p>
+          <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="ftext">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col text-center">
+                    <p><i>Empowering Minds, Nurturing Wellness: Your Journey to Inner Strength</i></p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-instagram instagram-icon"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-linkedin linkedin-icon"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-tiktok tiktok-icon"></i></a>
+                        </li>
+                    </ul>
+                    <ul id="sitemap" class="list-inline mt-3">
+                        <li class="list-inline-item"><a href="#home">Resources</a></li>
+                        <li class="list-inline-item"><a href="#home">Community</a></li>
+                        <li class="list-inline-item"><a href="#home">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <div id="dark-mode-toggle" class="dark-mode-icon">
+    <i class="fas fa-moon"></i>
+  </div>
+
+<script src="js/script.js"></script>
+<script src="js/darkMode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
